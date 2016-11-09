@@ -1,0 +1,21 @@
+body{
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  color : $base-font-color;
+}
+
+ui,li{
+  list-style: none;
+}
+
+a{
+  color : $primary-color;
+}
+
+input, textarea, button{
+  @include border-radius(0px);
+}
+
+img.device{
+  width : 100%;
+}
