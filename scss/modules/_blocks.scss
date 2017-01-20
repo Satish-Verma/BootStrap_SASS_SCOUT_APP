@@ -1,0 +1,26 @@
+
+.block_section{
+  padding : 10px 20px;
+}
+
+.block-primary{
+    @include add-background($primary-color);
+    color: lighten($primary-color, 50%)
+}
+
+.block-secondary{
+  @include add-background($secondary-color);
+  color: lighten($primary-color, 50%)    
+}
+
+.block-light{
+  @include add-background($light-color);
+}
+
+.block-dark{
+  @include add-background($dark-color);
+}
+
+.block-primary-head{
+  @include add-border(1px, $primary-color, all);
+}
