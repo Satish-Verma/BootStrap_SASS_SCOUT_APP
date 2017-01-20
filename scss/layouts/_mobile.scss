@@ -1,0 +1,42 @@
+@media screen and (max-width:768px) {
+
+   .search{
+
+      .col-xs-1{
+        width: 49.5px;
+      }
+      .col-xs-11{
+          width: calc(100% - 49.5px);
+      }
+
+   }
+
+   .container{
+     .row{
+       .col-sm-3{
+         margin-bottom: 30px;
+       }
+     }
+   }
+
+  .extra-pad-left{
+    padding-left: 0px;
+  }
+
+  .device{
+     height: auto !important;
+  }
+   .device-small{
+     width: 100% !important;
+     height: auto !important;
+     margin-bottom: 0px !important;
+   }
+
+   .footer-main{
+     ul{
+       margin-bottom: 20px;
+       text-align: center;
+     }
+   }
+
+}
