@@ -1,0 +1,58 @@
+
+
+.btn-primary{
+  @include add-background($primary-color);
+  @include add-border(2px, #ffffff, "all");
+}
+
+.btn-primary:hover {
+  background: darken($primary-color, 10%);
+  @include add-border(2px, #ffffff, "all");
+
+}
+
+
+.search-btn-box{
+
+
+  .col-xs-11, .col-xs-1{
+    padding: 0 ;
+    margin: 0;
+
+  background-color: $primary-color;
+  @include add-border(2px, $primary-color, "all");
+  border-radius: 0;
+    input{
+      height: 40px;
+      font-size: 22px;
+      transition: 0.4s;
+      padding: 15px 20px;
+      line-height: inherit;
+    }
+    input:hover label{
+      display: block;
+    }
+    a{
+      height:40px;
+
+    }
+    i{
+      color: #fff;
+      margin-left: 7px;
+
+    }
+    label{
+      transition: 0.8s;
+      z-index:-1;
+      position: absolute;
+      display: none;
+    }
+    .animated{
+      animation-fill-mode: both;
+      animation-duration: 1s;
+    }
+  }
+
+
+
+}
