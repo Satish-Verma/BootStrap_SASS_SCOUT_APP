@@ -1,0 +1,266 @@
+.hero-bgimg-left {
+    overflow: hidden;
+    position: relative;
+    padding-top: 120px;
+    min-height: 370px;
+    height: calc(100vh - 210px);
+    color: #fff
+}
+
+
+@media screen and (max-width: 759px) and (min-height: 760px) {
+    .hero-bgimg-left {
+        height: auto;
+        min-height: 550px
+    }
+}
+.hero-bgimg-left::before {
+    content: '';
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-animation: simple-in 1s both cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s;
+    -moz-animation: simple-in 1s both cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s;
+    animation: simple-in 1s both cubic-bezier(0.39, 0.575, 0.565, 1) 1.2s;
+    background-image: -webkit-radial-gradient(0% 35%, circle, rgba(0, 0, 0, 0.25), transparent);
+    background-image: radial-gradient( circle at 0% 35%, rgba(0, 0, 0, 0.25), transparent)
+}
+
+.flexslider {
+    margin: 0;
+    padding: 0
+}
+.flexslider .slides>li {
+    //display: none;
+    //-webkit-backface-visibility: hidden
+    
+}
+.flexslider .slides img {
+    width: 100%;
+    display: block
+}
+.flexslider .slides::after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+html[xmlns] .flexslider .slides {
+    display: block
+}
+* html .flexslider .slides {
+    height: 1%
+}
+.no-js .flexslider .slides>li:first-child {
+    display: block
+}
+.hero-slider .flex-active-slide {
+    -webkit-transform: scale(1.1) rotateZ(0.01deg);
+    -moz-transform: scale(1.1) rotateZ(0.01deg);
+    -ms-transform: scale(1.1) rotateZ(0.01deg);
+    // -o-transform: scale(1.1) rotateZ(0.01deg);
+    transform: scale(1.1) rotateZ(0.01deg);
+    -webkit-animation: simple-transform-in 12s both cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-animation: simple-transform-in 12s both cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation: simple-transform-in 12s both cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+.slides{
+  li:nth-child(1){
+    background: url("http://dootrix.com/wp-content/themes/dootrix-2016/img/hero/IMG_1215.jpg");
+
+  }
+  li:nth-child(2){
+    background: url($showcase-image) no-repeat top center;
+  }
+  li:nth-child(3){
+
+  }
+  li:nth-child(4){
+
+  }
+}
+.hero-slider .slides>li {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+@media screen and (max-width: 959px) {
+    .hero-bgimg-left::before {
+        background-image: -webkit-radial-gradient(0% 35%, circle, rgba(0, 0, 0, 0.65), transparent);
+        background-image: radial-gradient( circle at 0% 35%, rgba(0, 0, 0, 0.65), transparent)
+    }
+}
+@media screen and (min-width: 760px) {
+    .hero-bgimg-left {
+        padding-top: 180px;
+        height: calc(100vh - 270px)
+    }
+}
+@media screen and (min-width: 760px) and (min-height: 960px) {
+    .hero-bgimg-left {
+        min-height: 690px;
+        height: auto
+    }
+}
+@media screen and (min-width: 960px) {
+    .hero-bgimg-left {
+        height: calc(100vh - 290px)
+    }
+}
+@media screen and (min-width: 960px) and (min-height: 960px) {
+    .hero-bgimg-left {
+        min-height: 490px;
+        height: auto
+    }
+}
+@media screen and (min-width: 1160px) and (min-height: 960px) {
+    .hero-bgimg-left {
+        min-height: 630px;
+        height: auto
+    }
+}
+.hero-bgimg-left {
+    opacity: 0;
+    -webkit-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+    -moz-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s;
+    animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s
+}
+.hero-bgimg-left p {
+    max-width: 240px
+}
+@media screen and (min-width: 760px) {
+    .hero-bgimg-left p {
+        max-width: 380px
+    }
+}
+@media screen and (min-width: 1160px) and (min-height: 960px) {
+    .hero-bgimg-left p {
+        max-width: 430px
+    }
+}
+.hero-bgimg-left p {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    //-o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s;
+    -moz-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s;
+    animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.9s
+}
+.hero-bgimg-left h1 {
+    margin-bottom: .25em;
+    max-width: 280px
+}
+@media screen and (min-width: 760px) {
+    .hero-bgimg-left h1 {
+        font-size: 90px;
+        font-size: 5.625rem
+    }
+}
+@media screen and (min-width: 1160px) and (min-height: 960px) {
+    .hero-bgimg-left h1 {
+        font-size: 110px;
+        font-size: 6.875rem
+    }
+}
+@media screen and (min-width: 760px) {
+    .hero-bgimg-left h1 {
+        max-width: 580px
+    }
+}
+@media screen and (min-width: 1160px) and (min-height: 960px) {
+    .hero-bgimg-left h1 {
+        max-width: 720px
+    }
+}
+.hero-bgimg-left h1 {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    //-o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s;
+    -moz-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s;
+    animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.8s
+}
+.hero-bgimg-left h6 {
+    display: inline-block
+}
+.hero-bgimg-left h6 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    //-o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s;
+    -moz-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s;
+    animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 0.7s
+}
+.hero-bgimg-left .button-dark {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    //-o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 1s;
+    -moz-animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 1s;
+    animation: simple-in 0.5s both cubic-bezier(0.39, 0.575, 0.565, 1) 1s
+}
+.hero-bgimg-left .row-xwide {
+    position: relative
+}
+.hero-bgimg-left+.row-dark>[class*='row-']:first-child,
+.hero-bgimg-left+.row-light>[class*='row-']:first-child {
+    position: relative
+}
+.hero-bgimg-left+.row-dark>[class*='row-']:first-child::before,
+.hero-bgimg-left+.row-light>[class*='row-']:first-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: -116px;
+    width: 29px;
+    height: 52px;
+    background: url(../img/robot-light.png) no-repeat;
+    background-size: contain
+}
+@media screen and (min-width: 760px) {
+    .hero-bgimg-left+.row-dark>[class*='row-']:first-child::before,
+    .hero-bgimg-left+.row-light>[class*='row-']:first-child::before {
+        top: -140px;
+        width: 44px;
+        height: 80px
+    }
+}
+@media screen and (min-width: 960px) {
+    .hero-bgimg-left+.row-dark>[class*='row-']:first-child::before,
+    .hero-bgimg-left+.row-light>[class*='row-']:first-child::before {
+        top: -160px
+    }
+}
+@media screen and (min-width: 1160px) and (min-height: 960px) {
+    .hero-bgimg-left+.row-dark>[class*='row-']:first-child::before,
+    .hero-bgimg-left+.row-light>[class*='row-']:first-child::before {
+        top: -223px;
+        width: 58px;
+        height: 103px
+    }
+}
