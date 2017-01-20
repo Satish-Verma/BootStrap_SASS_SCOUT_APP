@@ -1,0 +1,114 @@
+.card{
+  @include add-border(2px, $primary-color, all);
+  //@include add-border(1px, #cccccc, right-left);
+  padding: 15px;
+
+  //margin-right: 15px !important;
+  text-align: center;
+  height : 350px;
+
+  img{
+    height: 180px;
+    //@include add-border(2px, $primary-color, all);
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  a{
+    padding-right: 5px;
+  }
+
+  i{
+    @include add-border(2px, $primary-color, all);
+    border-radius : 50%;
+    padding:5px;
+    width:  42px;
+  }
+
+  i:hover{
+    border-color : #144578;
+  }
+
+}
+
+div.card:hover{
+  color: lighten($primary-color, 10%);
+  border-color :#144578;
+}
+
+.card-block{
+    @include add-border(2px, $primary-color, top);
+    padding: 10px;
+}
+
+
+
+.material-card{
+  overflow: hidden;
+  text-align: center;
+  background: url(https://assets.luxurycruiseconnections.com/backgrounds/services-bg.jpg) bottom no-repeat;
+  background-position: 50% -160.984px;
+  background-size: cover;
+  color: #fff;
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 105px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  div.box:hover{
+    border-color :#144578;
+    i{
+      background :#144578;
+    }
+
+  }
+
+
+  .box{
+      @include add-border(2px, $primary-color, all);
+      background-color: rgba(0,0,0,.3);
+      h4{
+        text-transform: uppercase;
+        padding-top: 30px;
+      }
+
+      p{
+          padding-bottom: 30px;
+      }
+
+      i{
+          border-radius: 50%;
+          padding: 15px;
+          width: 81px;
+          line-height: 1.1em;
+          margin-top: -40px;
+          background: $primary-color;
+      }
+  }
+
+}
+
+
+.feature-box{
+  @include add-background($primary-color);
+  color: lighten($primary-color, 50%);
+  .row{
+    margin-top: 35px;
+    h3{
+      margin-bottom: 0px;
+    }
+    i{
+      padding-top: 24px;   // the size of h3
+    }
+  }
+
+  .col-md-4{
+    padding-right: 100px;
+  }
+
+}
