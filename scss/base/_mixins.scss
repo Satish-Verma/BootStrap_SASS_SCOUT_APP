@@ -27,3 +27,15 @@
 @mixin add-background($color){
   background-color: $color;
 }
+
+@mixin add-extra-padding($pixel, $position){
+  @if($position == "right"){
+      padding-right : $pixel;
+  }@else if($position == "left"){
+      padding-left: $pixel;
+  }@else if($position == "top"){
+      padding-top: $pixel;
+  }@else if($position == "bottom"){
+      padding-bottom: $pixel;
+  }
+}
