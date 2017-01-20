@@ -12,11 +12,13 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+      <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
    <header class="header-main">
@@ -48,15 +50,33 @@
        </nav>
   <header>
 
+    <section class="top-inner ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 search-btn-box">
+              <form action="" class="search form-group">
+                <div class="col-xs-11" >
+                  <input type="search" class="form-control"  placeholder="Search our tutorials">
+                </div>
+                <div class="col-xs-1" >
+                    <a href="#"><i class="fa fa-search fa-5" class="form-control"></i></a>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  </section>
+
     <!--Section: Blog v.3-->
-    <section class="section extra-margins" style="padding:70px" >
+    <section class="section-light"  >
       <div class="container">
         <!--Section heading-->
         <h1 class="section-heading">Our Blogs</h1>
         <hr class="mt-2 mb-2">
         <div class="col-md-8">
         <!--First row-->
-        <div class="row">
+        <div class="row  blog-post">
 
             <!--First column-->
             <div class="col-md-5 mb-r">
@@ -76,7 +96,7 @@
                 <a href="" class="pink-text"><h5><i class="fa fa-heart"></i> Lifestyle</h5></a>
                 <h4>Interpersonal communication - what is your style?</h4>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis aut rerum.</p>
-                <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
+                <p>by <i class="fa fa-user"></i><a><strong> Jessica Clark</strong></a>, <i class="fa fa-clock-o"></i> 26/08/2016</p>
                 <a class="btn btn-primary">Read more</a>
             </div>
             <!--/Second column-->
@@ -84,10 +104,10 @@
         </div>
         <!--/First row-->
 
-        <hr>
+
 
         <!--Second row-->
-        <div class="row">
+        <div class="row  blog-post">
 
             <!--First column-->
             <div class="col-md-5 mb-r">
@@ -107,7 +127,7 @@
                 <a href="" class="light-green-text"><h5><i class="fa fa-plane"></i> Travels</h5></a>
                 <h4>Food culture - explore the rituals of eating in the world.</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident et dolorum fuga.</p>
-                <p>by <a><strong>Jessica Clark</strong></a>, 24/08/2016</p>
+                <p>by <i class="fa fa-user"></i><a><strong> Jessica Clark</strong></a>, <i class="fa fa-clock-o"></i> 24/08/2016</p>
                 <a class="btn btn-primary">Read more</a>
             </div>
             <!--/Second column-->
@@ -115,10 +135,9 @@
         </div>
         <!--/Second row-->
 
-        <hr>
 
         <!--Third row-->
-        <div class="row">
+        <div class="row blog-post">
 
             <!--First column-->
             <div class="col-md-5 mb-r">
@@ -138,7 +157,7 @@
                 <a href="" class="light-blue-text"><h5><i class="fa fa-camera"></i> Photography</h5></a>
                 <h4>10 tips on how to photograph the lake.</h4>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-                <p>by <a><strong>Jessica Clark</strong></a>, 21/08/2016</p>
+                <p>by <i class="fa fa-user"></i><a><strong> Jessica Clark</strong></a>, <i class="fa fa-clock-o"></i> 21/08/2016</p>
                 <a class="btn btn-primary">Read more</a>
             </div>
             <!--/Second column-->
@@ -147,8 +166,8 @@
         <!--/Third row-->
         </div>
         <div class="col-md-4">
-          <div class="row">
-                    <div>
+          <div class="row block-primary-head extra-margin-bottom">
+                    <div class="extra-pad-all">
                     <!-- Nav tabs -->
                       <ul class="nav nav-tabs tabs-3 red" role="tablist">
                           <li class="nav-item">
@@ -186,14 +205,14 @@
                     </div>
 
         </div>
-        <div class="row block-primary-head">
-          <h3>  <i class="fa fa-play-circle"></i><span> Featured Videos</span></h3>
+        <div class="row block-primary-head  extra-margin-bottom">
+          <h4 class="block-primary extra-pad-all">  <i class="fa fa-play-circle fa-3 "></i><span> Featured Videos</span></h4>
           <div class="embed-responsive embed-responsive-4by3">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=oAPdNKTrBYA"></iframe>
           </div>
         </div>
-        <div class="row scrollable">
-          <h3><i class="fa fa-comments"></i><span> Recent Comments<span></h3>
+        <div class="row scrollable  block-primary-head  extra-margin-bottom">
+          <h4 class="block-primary extra-pad-all"><i class="fa fa-comments fa-3"></i><span> Recent Comments<span></h4>
           <div class="row">
                 <div class="col-md-2 col-xs-12">
                   <img src="img/user.png" class="pull-left img-circle"/>
@@ -227,85 +246,78 @@
     </section>
     <!--/Section: Blog v.3-->
 
-    <section>
+    <section class="center_section">
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
             <div class="block">
-              <i class="fa fa-html5"></i>
-              <h3>HTML 5</h3>
+              <i class="fa fa-html5 fa-border fa-6"></i>
+              <h3 class="heading-primary">HTML 5</h3>
               <p>Learn HTML 5 new tags and features to enhance your web development. There is enough changes as compared to HTML 4.</p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 ">
             <div class="block">
-              <i class="fa fa-pie-chart"></i>
-              <h3>Bootstrap</h3>
+              <i class="fa fa-pie-chart  fa-border  fa-6"></i>
+              <h3 class="heading-primary">Bootstrap</h3>
               <p>Learn bootstrap for responsive web designing. It is a mobile first designing. It divides the full width into 12 columns</p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="block">
-              <i class="fa fa-lock"></i>
-              <h3>SCSS</h3>
-              <p>SCSS or Less is used for pre-processing of CSS. It saves a lot of time having features like Java programming. It runs on Ruby.</p>
+              <i class="fa fa-lock  fa-border  fa-6" ></i>
+              <h3 class="heading-primary">SCSS</h3>
+              <p>SCSS or Less is used for pre-processing of CSS. It saves a lot of time having features like Java programming.</p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="block">
-              <i class="fa fa-question-circle"></i>
-              <h3>Responsive Design</h3>
-              <p>Have to adjust for every screen size majorly web desktop and mobile users. </p>
+              <i class="fa fa-question-circle  fa-border fa-6"></i>
+              <h3 class="heading-primary">CSS 3</h3>
+              <p> Learn rounded corners, shadows, gradients, transitions or animations,  multi-columns, flexible box or grid layouts. </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-  <footer class="footer-main">
-        <div class="container">
-          <div class="row">
-                  <div class="col-md-4">
-                      <h4> Get the tutorial App</h4>
-                      <ul>
-                        <li>Android App</li>
-                        <li>iPhone App</li>
-                        <li>Windows App</li>
-                        <li>Chrome App</li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4">
-                      <h4> About</h4>
-                      <ul>
-                        <li>What are the tutorials about?</li>
-                        <li>View Tutorials Indexes</li>
-                        <li>Advertise with us</li>
-                        <li>Careers</li>
-                        <li>Web Development</li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4">
-                      <h4> Support</h4>
-                      <ul>
-                        <li>Support Home</li>
-                        <li>Our Community</li>
-                        <li>Send a Ticket</li>
-                        <li>Contact Us</li>
-                      </ul>
-                  </div>
+    <footer class="footer-main">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
 
-          </div>
+                <ul>
+                  <h4> Get the tutorial App</h4>
+                  <li><a href="#">Android App</a></li>
+                  <li><a href="#">iPhone App</a></li>
+                  <li><a href="#">Windows App</a></li>
+                  <li><a href="#">Chrome App</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
 
+                <ul>
+                  <h4> About</h4>
+                  <li><a href="#">What are the tutorials about?</a></li>
+                  <li><a href="#">View Tutorials Indexes</a></li>
+                  <li><a href="#">Advertise >with us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+              <ul>
+                <h4> Support</h4>
+                <li><a href="#">Support Home</a></li>
+                <li><a href="#">Our Community</a></li>
+                <li><a href="#">Send a Ticket</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
         </div>
-        <!--Copyright-->
-  <div class="footer-copyright">
-      <div class="container-fluid">
-          © 2015 Copyright: <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
-
       </div>
-  </div>
-  <!--/.Copyright-->
-  </footer>
+    </footer>
 
 
 </body>
