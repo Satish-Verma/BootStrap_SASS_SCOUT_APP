@@ -2,7 +2,9 @@ body{
   font-size: $base-font-size;
   font-family: $base-font-family;
   color : $base-font-color;
+  background: #ececec;
 }
+
 
 ui,li{
   list-style: none;
@@ -18,4 +20,36 @@ input, textarea, button{
 
 img.device{
   width : 100%;
+  height : auto;
+  display:block;
+    margin:auto;
+}
+
+img.device-small{
+  width : 60%;
+  margin-bottom : -50px;
+}
+
+.container{
+  width: 100%;
+  padding : 10px 60px;
+}
+
+.carousel-bottom{
+  bottom: -40px;
+}
+
+.carousel-inner{
+  strong{
+    float : right;
+  }
+
+}
+
+hr{
+   border-color: lighten(#666666, 20%);
+}
+
+.green-border-bottom{
+  @include add-border(5px, #7fba00, bottom);
 }
