@@ -12,11 +12,25 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script>
+      function myMap() {
+        var mapCanvas = document.getElementById("section-map");
+        var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+</script>
+
+
   </head>
   <body>
    <header class="header-main">
@@ -48,46 +62,52 @@
         </nav>
       <header>
 
-       <section class="section-map">
-          <iframe src="https://maps.google.com/maps?q=London&hl=en&sll=37.0625,-95.677068&sspn=46.677964,93.076172&t=h&hnear=London,+United+Kingdom&z=10" width="1600" height="400" frame-border="0" style="border:0"></iframe>
-       </section>
-
-        <section class="section-light top-inner" style="padding:70px">
+        <section class="section-light top-inner ">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
-                  <form action="" class="search">
-                    <div>
-                      <input type="search" placeholder="Search our tutorials">
-                      <button type="submit"><a href="#"><i class="fa fa-search"></i></a></button>
+                <div class="col-md-5 search-btn-box">
+                  <form action="" class="search form-group">
+                    <div class="col-xs-11" >
+                      <input type="search" class="form-control"  placeholder="Search our tutorials">
+                    </div>
+                    <div class="col-xs-1" >
+                        <a href="#"><i class="fa fa-search fa-5" class="form-control"></i></a>
+                    </div>
                     </div>
                   </form>
                 </div>
-                <div class="col-md-6"></div>
               </div>
             </div>
-      </section>
+        </section>
 
-      <section class="section-primary-a">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-                  <h2>Building Technology to shape your future</h2>
+        <section class="section-primary green-border-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                      <h2>Building Technology to shape your future</h2>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+       <section class="section-map" style="width:100%;height:500px">
+
+       </section>
+
+
+
 
       <section>
         <div class="container">
           <div class="row">
+
             <div class="col-sm-8">
                     <!--Naked Form-->
-                          <div class="card-block">
+                          <div >
                             <!--Header-->
                             <div class="text-xs-center">
-                                <h3><i class="fa fa-envelope"></i> Write to us:</h3>
-                                <hr class="mt-2 mb-2">
+                                <h1><i class="fa fa-envelope"></i> Write to us:</h1>
+                                <hr/>
                             </div>
                             <!--Body-->
                             <p>We'll write rarely, but only the best content.</p>
@@ -114,14 +134,14 @@
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
                             <div class="text-xs-center">
-                                <button class="btn btn-default">Submit</button>
+                                <button class="btn btn-lg btn-primary">Submit</button>
                             </div>
                             </form>
                           </div>
                       <!--Naked Form-->
             </div>
-            <div class="col-md-4">
-                <h3><i class="fa fa-home"><span> Our Location</span></i></h3>
+            <div class="col-md-4  block-primary-head padding-zero">
+                <h3 class="block-primary extra-pad-all"><i class="fa fa-home"><span> Our Location</span></i></h3>
                 <div class="container">
                   <address>
                       <strong>Satty Inc.</strong><br>
@@ -135,7 +155,7 @@
         </div>
       </section>
 
-      <section class="section-primary-a">
+      <section class="section-primary">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -144,21 +164,24 @@
           </div>
         </div>
       </section>
-        <section>
+      <section >
           <div class="container">
             <div class="row">
+              <h2>Meet our Team</h2>
+              <hr/>
               <div class="col-sm-3">
                 <div class="card">
-                  <img src="img/satish.jpg"></i>
+
+                  <img src="img/satish.jpg" ></i>
                   <div class="card-block">
                     <h3 class="card-title">Satish Verma</h3>
                     <p class="card-text">Founder & CEO</p>
                     <!--Facebook-->
-                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook fa-3"></i></a>
                     <!--Twitter-->
-                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter fa-3"></i></a>
                     <!--Google +-->
-                    <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-lnkdn"><i class="fa fa-linkedin fa-3"></i></a>
 
                   </div>
                 </div>
@@ -170,11 +193,11 @@
                     <h3 class="card-title">Richmond Trial</h3>
                     <p class="card-text">Founder & CTO.</p>
                     <!--Facebook-->
-                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook fa-3"></i></a>
                     <!--Twitter-->
-                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter fa-3"></i></a>
                     <!--Google +-->
-                    <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-lnkdn"><i class="fa fa-linkedin fa-3"></i></a>
 
                   </div>
                 </div>
@@ -186,11 +209,11 @@
                     <h3 class="card-title">Kristy Who</h3>
                     <p class="card-text">QA Manager</p>
                     <!--Facebook-->
-                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook fa-3"></i></a>
                     <!--Twitter-->
-                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter fa-3"></i></a>
                     <!--Google +-->
-                    <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-lnkdn"><i class="fa fa-linkedin fa-3"></i></a>
 
                   </div>
                 </div>
@@ -202,144 +225,140 @@
                     <h3 class="card-title">Helith William</h3>
                     <p class="card-text">Marketing Manager</p>
                     <!--Facebook-->
-                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook fa-3"></i></a>
                     <!--Twitter-->
-                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter fa-3"></i></a>
                     <!--Google +-->
-                    <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+                    <a type="button" class="btn-floating btn-small btn-lnkdn"><i class="fa fa-linkedin fa-3"></i></a>
 
                   </div>
                 </div>
             </div>
           </div>
         </section>
-      <section class="section-primary-a">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                    <h2><i>Our Testimonials</i></h2>
-              </div>
+        <section class="section-primary">
+           <div class="container">
+                      <div class="row">
+                          <h2><i>Our Recent Testimonials</i></h2>
+                          <hr/>
+                        <div class="col-md-12">
+                              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators carousel-bottom">
+                                  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                  <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner">
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                  <div class="row">
+                                    <div class="col-sm-12">
+                                      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+                                      <small><strong >Vulputate M., Dolor</strong></small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                  <div class="row">
+                                    <div class="col-sm-12">
+                                      <p>&ldquo;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.&rdquo;</p>
+                                      <small><strong>Fringilla A., Vulputate Sit</strong></small>
+                                    </div>
+                                  </div>
+                                </div>
+                              <!-- Quote 3 -->
+                                <div class="item">
+                                  <div class="row">
+                                    <div class="col-sm-12">
+                                      <p>&ldquo;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.&rdquo;</p>
+                                      <small><strong>Aenean A., Justo Cras</strong></small>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                          </div>
+                </div>
             </div>
-          </div>
-        </section>
-      <section>
-         <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                              <!-- Bottom Carousel Indicators -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                                <li data-target="#quote-carousel" data-slide-to="2"></li>
-                              </ol>
-                              <!-- Carousel Slides / Quotes -->
-                              <div class="carousel-inner">
-                              <!-- Quote 1 -->
-                              <div class="item active">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
-                                    <small><strong>Vulputate M., Dolor</strong></small>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Quote 2 -->
-                              <div class="item">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <p>&ldquo;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.&rdquo;</p>
-                                    <small><strong>Fringilla A., Vulputate Sit</strong></small>
-                                  </div>
-                                </div>
-                              </div>
-                            <!-- Quote 3 -->
-                              <div class="item">
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <p>&ldquo;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.&rdquo;</p>
-                                    <small><strong>Aenean A., Justo Cras</strong></small>
-                                  </div>
-                                </div>
-                              </div>
-                              </div>
-                        </div>
-              </div>
-          </div>
-       </div>
+         </div>
       </section>
 
-      <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="block">
-              <i class="fa fa-html5"></i>
-              <h3>HTML 5</h3>
-              <p>Learn HTML 5 new tags and features to enhance your web development. There is enough changes as compared to HTML 4.</p>
+      <section class="center_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="block">
+                <i class="fa fa-html5 fa-border fa-6"></i>
+                <h3 class="heading-primary">HTML 5</h3>
+                <p>Learn HTML 5 new tags and features to enhance your web development. There is enough changes as compared to HTML 4.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="block">
-              <i class="fa fa-pie-chart"></i>
-              <h3>Bootstrap</h3>
-              <p>Learn bootstrap for responsive web designing. It is a mobile first designing. It divides the full width into 12 columns</p>
+            <div class="col-sm-3 ">
+              <div class="block">
+                <i class="fa fa-pie-chart  fa-border  fa-6"></i>
+                <h3 class="heading-primary">Bootstrap</h3>
+                <p>Learn bootstrap for responsive web designing. It is a mobile first designing. It divides the full width into 12 columns</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="block">
-              <i class="fa fa-lock"></i>
-              <h3>SCSS</h3>
-              <p>SCSS or Less is used for pre-processing of CSS. It saves a lot of time having features like Java programming. It runs on Ruby.</p>
+            <div class="col-sm-3">
+              <div class="block">
+                <i class="fa fa-lock  fa-border  fa-6" ></i>
+                <h3 class="heading-primary">SCSS</h3>
+                <p>SCSS or Less is used for pre-processing of CSS. It saves a lot of time having features like Java programming.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="block">
-              <i class="fa fa-question-circle"></i>
-              <h3>Responsive Design</h3>
-              <p>Have to adjust for every screen size majorly web desktop and mobile users. </p>
+            <div class="col-sm-3">
+              <div class="block">
+                <i class="fa fa-question-circle  fa-border fa-6"></i>
+                <h3 class="heading-primary">CSS 3</h3>
+                <p> Learn rounded corners, shadows, gradients, transitions or animations,  multi-columns, flexible box or grid layouts. </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
 
 
-<footer class="footer-main">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h4> Get the tutorial App</h4>
-            <ul>
-              <li>Android App</li>
-              <li>iPhone App</li>
-              <li>Windows App</li>
-              <li>Chrome App</li>
-            </ul>
+      <footer class="footer-main">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+
+                  <ul>
+                    <h4> Get the tutorial App</h4>
+                    <li><a href="#">Android App</a></li>
+                    <li><a href="#">iPhone App</a></li>
+                    <li><a href="#">Windows App</a></li>
+                    <li><a href="#">Chrome App</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+
+                  <ul>
+                    <h4> About</h4>
+                    <li><a href="#">What are the tutorials about?</a></li>
+                    <li><a href="#">View Tutorials Indexes</a></li>
+                    <li><a href="#">Advertise >with us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Web Development</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+
+                <ul>
+                  <h4> Support</h4>
+                  <li><a href="#">Support Home</a></li>
+                  <li><a href="#">Our Community</a></li>
+                  <li><a href="#">Send a Ticket</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
         </div>
-        <div class="col-md-4">
-            <h4> About</h4>
-            <ul>
-              <li>What are the tutorials about?</li>
-              <li>View Tutorials Indexes</li>
-              <li>Advertise with us</li>
-              <li>Careers</li>
-              <li>Web Development</li>
-            </ul>
-        </div>
-        <div class="col-md-4">
-          <h4> Support</h4>
-          <ul>
-            <li>Support Home</li>
-            <li>Our Community</li>
-            <li>Send a Ticket</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-    </div>
-  </div>
-</footer>
+      </footer>
 
 
 </body>
